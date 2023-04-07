@@ -7,4 +7,4 @@ echo $PRIVATE_KEY > privatekey.pem
 echo $SERVER > server.crt
 npm uninstall sqlite3
 npm install --save sqlite3
-pm2 start server.js --name InventoryCRUD --env=production
+pm2 start ./bin/www --name InventoryCRUD --env=production
