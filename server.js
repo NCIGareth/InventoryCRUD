@@ -60,7 +60,6 @@ app.get("/test", (req, res) => {
 
 });
 
-app.listen(8443, () => console.log("Application Running on Port 8443"));
 
 app.get("/", (req, res) =>  {
     res.redirect("/inventory");

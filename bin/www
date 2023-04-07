@@ -62,7 +62,6 @@ function onListening() {
   debug('Listening on ' + bind);
 }
 
-
 // Add HTTPS Section
 var fs = require('fs');
 var https = require('https');
@@ -82,7 +81,6 @@ if(process.env.ENV !== "DEV") {
   privatekey = header + "\n" + privatekey.replace(/ /g, "\n") + footer+"\n"
 
   console.log(privatekey)
-
 
   var header = "-----BEGIN CERTIFICATE-----"
   var footer = "-----END CERTIFICATE-----"
@@ -128,5 +126,4 @@ if(process.env.ENV !== "DEV") {
   server.listen(port);
   server.on('error', onError);
   server.on('listening', onListening);
-
 }
