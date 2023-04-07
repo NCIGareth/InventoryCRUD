@@ -60,7 +60,6 @@ app.get("/test", (req, res) => {
 
 });
 
-app.listen(3000, () => console.log("Application Running on Port 3000"));
 
 app.get("/", (req, res) =>  {
     res.redirect("/inventory");
