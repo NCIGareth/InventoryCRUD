@@ -146,9 +146,9 @@ https
 
     {
 
-      key: fs.readFileSync("./key.pem"),
+      key: fs.readFileSync("../key.pem"),
 
-      cert: fs.readFileSync("./cert.pem"),
+      cert: fs.readFileSync("../cert.pem"),
 
     },
 
